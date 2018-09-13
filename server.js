@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 require("./routes/routes.js")(app);
 
 //initialize Bandiwdth client
-var client = new Bandwidth({
+const client = new bandwidth({
     userId    : "{{USER_ID}}",
     apiToken  : "{{TOKEN}}",
     apiSecret : "{{SECRET}}"
@@ -30,10 +30,10 @@ function sendReminderSMS(){
     //(their phone number and the date and time of their appointment)
     //from whatever database you are using
     //and set variables
-    var apptDate = "{{DATE}}";
-    var apptTime = "{{TIME}}";
-    var clientNum = "{{CLIENT_NUMBER}}";
-    var BWNum = "{{YOUR_BANDWIDTH_NUM}}}";
+    let apptDate = "{{DATE}}";
+    let apptTime = "{{TIME}}";
+    let clientNum = "{{CLIENT_NUMBER}}";
+    let BWNum = "{{YOUR_BANDWIDTH_NUM}}";
 
     //create outgoing SMS
     client.Message.send({
