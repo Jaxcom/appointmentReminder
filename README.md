@@ -5,9 +5,13 @@
 <a href="http://dev.bandwidth.com"><img src="https://s3.amazonaws.com/bwdemos/BW_Messaging.png"/></a>
 </div>
 
-A simple appointment reminder app using Bandwidth's Messaging API, Node.JS, and Express
+A simple appointment reminder app using Bandwidth's Messaging API, Node.JS, and Express.
 
 ## Table of Contents
+
+* [Prereqs](#prereqs)
+* [How It Works](#how-it-works)
+* [Deploy](#deploy)
 
 ## Prereqs
 
